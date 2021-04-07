@@ -23,12 +23,12 @@ st.write('---')
 
 
 
-df = (r"C:\Users\Admin\Downloads\Zomato_df.csv")
+#df = (r"C:\Users\Admin\Downloads\Zomato_df.csv")
 
 @st.cache
 
 def load_data():
-  data = pd.read_csv(df, encoding = 'ISO-8859-1')
+  data = pd.read_csv('https://github.com/Premkumar7090/zomatopredictions/blob/projects/Zomato_df.csv', encoding = 'ISO-8859-1')
   return data
 data=load_data()
 
